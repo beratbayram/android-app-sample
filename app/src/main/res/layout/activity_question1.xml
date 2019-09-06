@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    tools:context=".Question1">
+
+    <TextView
+        android:id="@+id/standart_question"
+        android:textSize="25sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/standart_question"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        style="@style/MyTheme.mini"/>
+
+    <ImageView
+        android:id="@+id/image"
+        style="@style/MyImage"
+        android:src="@drawable/japan"
+        android:contentDescription="@string/blank" />
+                                                                <!-- 1 -->
+    <RadioGroup
+        android:id="@+id/Question-1"
+        android:visibility="visible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/image"
+        android:orientation="vertical"
+        android:layout_centerHorizontal="true">
+        <RadioButton
+            android:id="@+id/Radio-1A"
+            android:text="@string/austria"
+            style="@style/MyRadio" />
+        <RadioButton
+            android:id="@+id/Radio-1B"
+            android:text="@string/canada"
+            style="@style/MyRadio" />
+        <RadioButton
+            android:id="@+id/Radio-1C"
+            android:onClick="trueAnswer"
+            android:text="@string/japan"
+            style="@style/MyRadio" />
+        <RadioButton
+            android:id="@+id/Radio-1D"
+            android:text="@string/congo"
+            style="@style/MyRadio" />
+    </RadioGroup>
+                                                                <!-- 2 -->
+    <RadioGroup
+        android:id="@+id/Question-2"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/image"
+        android:orientation="vertical"
+        android:layout_centerHorizontal="true">
+        <RadioButton
+            android:id="@+id/Radio-2A"
+            android:text="@string/india"
+            style="@style/MyRadio" />
+        <RadioButton
+            android:id="@+id/Radio-2B"
+            android:text="@string/congo"
+            android:onClick="trueAnswer"
+            style="@style/MyRadio" />
+        <RadioButton
+            android:id="@+id/Radio-2C"
+            android:text="@string/bangladesh"
+            style="@style/MyRadio" />
+        <RadioButton
+            android:id="@+id/Radio-2D"
+            android:text="@string/turkey"
+            style="@style/MyRadio" />
+    </RadioGroup>
+                                                                    <!-- 3 -->
+    <RadioGroup
+        android:id="@+id/Question-3"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/image"
+        android:orientation="vertical"
+        android:layout_centerHorizontal="true">
+        <RadioButton
+            android:id="@+id/Radio-3A"
+            android:text="@string/n_korea"
+            style="@style/MyRadio" />
+        <RadioButton
+            android:id="@+id/Radio-3B"
+            android:onClick="trueAnswer"
+            android:text="@string/estonia"
+            style="@style/MyRadio" />
+        <RadioButton
+            android:id="@+id/Radio-3C"
+            android:text="@string/s_korea"
+            style="@style/MyRadio" />
+        <RadioButton
+            android:id="@+id/Radio-3D"
+            android:text="@string/greece"
+            style="@style/MyRadio" />
+    </RadioGroup>
+                                                                    <!-- 4 -->
+    <RadioGroup
+        android:id="@+id/Question-4"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/image"
+        android:orientation="vertical"
+        android:layout_centerHorizontal="true">
+        <RadioButton
+            android:id="@+id/Radio-5A"
+            android:onClick="trueAnswer"
+            android:text="@string/mongolia"
+            style="@style/MyRadio" />
+        <RadioButton
+            android:id="@+id/Radio-5B"
+            android:text="@string/latvia"
+            style="@style/MyRadio" />
+        <RadioButton
+            android:id="@+id/Radio-5C"
+            android:text="@string/india"
+            style="@style/MyRadio" />
+        <RadioButton
+            android:id="@+id/Radio-5D"
+            android:text="@string/congo"
+            style="@style/MyRadio" />
+    </RadioGroup>
+                                                                <!-- 5 -->
+    <RadioGroup
+        android:id="@+id/Question-5"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/image"
+        android:orientation="vertical"
+        android:layout_centerHorizontal="true">
+        <RadioButton
+            android:id="@+id/Radio-4A"
+            android:text="@string/latvia"
+            style="@style/MyRadio" />
+        <RadioButton
+            android:id="@+id/Radio-4B"
+            android:text="@string/catalonia"
+            style="@style/MyRadio" />
+        <RadioButton
+            android:id="@+id/Radio-4C"
+            android:text="@string/spain"
+            style="@style/MyRadio" />
+        <RadioButton
+            android:id="@+id/Radio-4D"
+            android:onClick="trueAnswer"
+            android:text="@string/vatican"
+            style="@style/MyRadio" />
+    </RadioGroup>
+
+
+</RelativeLayout>

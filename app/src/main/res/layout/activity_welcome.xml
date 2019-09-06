@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    tools:context=".Welcome">
+
+    <TextView
+        android:id="@+id/welcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="106dp"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:text="@string/welcome"
+        android:textSize="40sp" />
+
+    <Button
+        android:id="@+id/button_start"
+        android:text="@string/start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:onClick="nextQuestion"/>
+
+    <TextView
+        android:id="@+id/fun_fact"
+        android:visibility="gone"
+        android:text="@string/fun_fact"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:textColor="@color/transparent_white"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/button_start"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:text="@string/scoreTable_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="50dp"
+        android:layout_centerHorizontal="true"
+        android:onClick="showScoreTable"/>
+
+    <Button
+        android:id="@+id/logout"
+        android:onClick="logout"
+        android:text="@string/logout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"/>
+
+
+</RelativeLayout>

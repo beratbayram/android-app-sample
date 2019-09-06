@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">Flags</string>
+    <string name="login_title">Welcome to Flags</string>
+    <string name="login_box_name">Username</string>
+    <string name="login_box_password">Password</string>
+    <string name="login_button_sign_in">Sign In</string>
+    <string name="login_button_sign_up">Sign Up</string>
+    <string name="welcome">Welcome</string>
+    <string name="blank">Blank</string>
+    <string name="start">Start</string>
+    <string name="start_again">Start Again</string>
+    <string name="india">India</string>
+    <string name="greece">Greece</string>
+    <string name="vatican">Vatican City</string>
+    <string name="usa">USA</string>
+    <string name="japan">Japan</string>
+    <string name="congo">Republic of Congo</string>
+    <string name="mongolia">Mongolia</string>
+    <string name="turkey">Turkey</string>
+    <string name="canada">Canada</string>
+    <string name="estonia">Estonia</string>
+    <string name="latvia">Latvia</string>
+    <string name="catalonia">Catalonia</string>
+    <string name="spain">Spain</string>
+    <string name="n_korea">North Korea</string>
+    <string name="s_korea">South Korea</string>
+    <string name="bangladesh">Bangladesh</string>
+    <string name="austria">Austria</string>
+    <string name="standart_question">Which country is this flag?</string>
+    <string name="invalid_sign_in">Username or password is wrong !</string>
+    <string name="scoreTable_button">Show Score Table</string>
+    <string name="scoreTable_title">Scores</string>
+    <string name="logout">LOGOUT</string>
+    <string name="same_username">This username is already taken!</string>
+    <string name="empty_field">Username and/or password can not be empty!</string>
+    <string name="fun_fact">Fun fact: Vatican City is the smallest country in the world !(measuring just 0.2 square miles)</string>
+</resources>

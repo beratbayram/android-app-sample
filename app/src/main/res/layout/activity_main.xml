@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:textColor="@color/white"
+        android:id="@+id/textView"
+        android:layout_width="202dp"
+        android:layout_height="80dp"
+        android:text="@string/login_title"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.167" />
+
+    <EditText
+        android:textColor="@color/white"
+        android:id="@+id/login_box_name"
+        android:layout_width="215dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="8dp"
+        android:autofillHints="AUTOFILL_HINT_USERNAME"
+        android:hint="@string/login_box_name"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.535"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <EditText
+        android:textColor="@color/white"
+        android:id="@+id/login_box_password"
+        android:layout_width="215dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="84dp"
+        android:autofillHints="AUTOFILL_HINT_PASSWORD"
+        android:hint="@string/login_box_password"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.535"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/login_box_name"
+        tools:layout_editor_absoluteX="79dp" />
+
+    <TextView
+        android:id="@+id/invalid_sign_in"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="@string/invalid_sign_in"
+        android:textColor="@color/red"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="@id/login_box_password"
+        app:layout_constraintTop_toBottomOf="@+id/login_box_password" />
+    <TextView
+        android:id="@+id/same_username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="@string/same_username"
+        android:textColor="@color/red"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="@id/login_box_password"
+        app:layout_constraintTop_toBottomOf="@+id/login_box_password" />
+    <TextView
+        android:id="@+id/empty_field"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="24dp"
+        android:text="@string/empty_field"
+        android:textColor="@color/red"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="@id/login_box_password"
+        app:layout_constraintTop_toBottomOf="@+id/login_box_password"
+        />
+
+    <Button
+        android:id="@+id/login_button_sign_up"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="24dp"
+        android:onClick="signUpFunction"
+        android:text="@string/login_button_sign_up"
+        app:layout_constraintEnd_toStartOf="@+id/viewCenterButton"
+        app:layout_constraintTop_toBottomOf="@+id/login_box_password" />
+
+    <View
+        android:id="@+id/viewCenterButton"
+        android:layout_width="10dp"
+        android:layout_height="10dp"
+        android:layout_marginTop="84dp"
+        android:background="@color/colorPrimaryDark"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/login_box_password" />
+
+    <Button
+        android:id="@+id/login_button_sign_in"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="64dp"
+        android:onClick="signInFunction"
+        android:text="@string/login_button_sign_in"
+        app:layout_constraintStart_toEndOf="@+id/viewCenterButton"
+        app:layout_constraintTop_toBottomOf="@+id/login_box_password" />
+
+</android.support.constraint.ConstraintLayout>
